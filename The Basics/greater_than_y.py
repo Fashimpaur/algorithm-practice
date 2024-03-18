@@ -13,7 +13,7 @@ def greater_than_y(sample, y):
             matches.append(i)
             count += 1
 
-    print(f'{count} {matches}')
+    print(count, matches)
 
 greater_than_y(arr_1, 28)
 greater_than_y(arr_2, 35)
