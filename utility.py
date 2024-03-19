@@ -2,6 +2,7 @@ from random import randint
 
 
 def generate_int_list(total, count, min_value_allowed, max_value_allowed):
+    ''' This is buggy at this time but multiple attempts can generate a list '''
     if total < count:
         raise ValueError("Total must be greater than or equal to count")
 
@@ -21,6 +22,14 @@ def generate_int_list(total, count, min_value_allowed, max_value_allowed):
     print(sum(integer_list))
 
 
-generate_int_list(468, 18, 1, 32)
+# generate_int_list(468, 18, 1, 32)
+
+def generate_rand_list(lowest, highest, length):
+    output_list = []
+    for i in range(length):
+        output_list.append(randint(lowest, highest))
+    print(output_list)
+
+generate_rand_list(0, 20, 15)
 
 
