@@ -10,4 +10,4 @@ Compilation of practice repositories to improve algorithm understanding
 5. [For a given array, print the number of values greater than y](https://github.com/Fashimpaur/algorithm-practice/blob/main/The%20Basics/greater_than_y.py)
 6. [Repeat #5 above using a list comprehension](https://github.com/Fashimpaur/algorithm-practice/blob/main/The%20Basics/comprehension_greater_than_y.py)
 7. [Min, Max, Average](https://github.com/Fashimpaur/algorithm-practice/blob/main/The%20Basics/min_max_average.py)
-8. Replace negative array values with String
+8. [Replace negative array values with String](https://github.com/Fashimpaur/algorithm-practice/blob/main/The%20Basics/swap_negative_with_string.py)
