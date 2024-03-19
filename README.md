@@ -12,7 +12,7 @@ Compilation of practice repositories to improve algorithm understanding
 7. [Min, Max, Average](https://github.com/Fashimpaur/algorithm-practice/blob/main/The%20Basics/min_max_average.py)
 8. [Replace negative array values with String](https://github.com/Fashimpaur/algorithm-practice/blob/main/The%20Basics/swap_negative_with_string.py)
 9. [Print odd integers between 1 and 1028](https://github.com/Fashimpaur/algorithm-practice/blob/main/The%20Basics/print_odds_1_1028.py)
-10. Iterate and print an array
+10. [Iterate and print an array](https://github.com/Fashimpaur/algorithm-practice/blob/main/The%20Basics/iterate_and_print.py)
 11. Get and print average
 12. Return an original array with all values squared
 13. Change negative array values to zeroes
