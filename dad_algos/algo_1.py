@@ -5,6 +5,9 @@
 str1 = "   hello world     "
 expected1 = "hello world"
 
+str2 = "    the   quick brown     fox     "
+expected2 = "the quick brown fox"
+
 # Trims any leading or trailing white space from the given str.
 # - Time: O(?).
 # - Space: O(?).
@@ -13,11 +16,17 @@ expected1 = "hello world"
 # stripped.
 
 # Using builtin function
+
+import re
+
 def trim(string_in):
     return string_in.strip()
 
 
-def trim_functional(string_in):
+def trim_functional(input_str):
+    # remove duplicate sequences of spaces
+    string_in = re.sub(r'\s+', ' ', input_str)
+
     chars_out = []
 
     for x in range(0, len(string_in)):
@@ -47,25 +56,27 @@ def trim_functional(string_in):
 
 strA1 = "yes"
 strB1 = "eys"
-expected2 = True
+anag_expected1 = True
 
 strA2 = "yes"
 strB2 = "eYs"
-expected3 = True
+anag_expected2 = True
 
 strA3 = "no"
 strB3 = "noo"
-expected4 = False
+anag_expected3 = False
 
 strA4 = "silent"
 strB4 = "listen"
-expected5 = True
+anag_expected4 = True
 
 strA5 = "yes"
 strB5 = "eee"
+anag_expected5 = False
 
 strA6 = "eee"
 strB6 = "sss"
+anag_expected6 = False
 
 #  * Determines whether s1 and s2 are anagrams of each other.
 #  * Anagrams have all the same letters but in different orders.
@@ -109,10 +120,8 @@ def is_anagram(str1, str2):
 
 
 if __name__ == "__main__":
-    print("It was...")
-    print(str1)
-    print("It is...")
     print(f'[{trim_functional(str1)}]')
+    print(f'[{trim_functional(str2)}]')
 
     # print(is_anagram(strA1, strB1))
     # print(is_anagram(strA2, strB2))
